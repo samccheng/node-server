@@ -45,5 +45,11 @@ app.get('/about', (req, res) => {
   })
 })
 
+app.get('/projects', (req, res) => {
+  res.render('home.hbs', {
+    pageTitle: 'projects'
+  })
+})
+
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`))
