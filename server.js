@@ -28,10 +28,6 @@ hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
 })
 
-hbs.registerHelper('uppercase', (text) => {
-  return text.toUpperCase()
-})
-
 app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'home',
@@ -41,7 +37,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    pageTitle: 'about page'
+    pageTitle: 'about'
   })
 })
 
